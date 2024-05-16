@@ -2,17 +2,13 @@
     background-color: $midnight-green;
     color: $white;
     padding-block: rem(73px);
-    padding-inline: 165px;
-    .logo-and-links,
-    .contact-btn {
-        gap: 10px;
+    padding-inline:165px;
 
         .right-links>* {
             font-size: em(18px);
             font-weight: 600;
             line-height: em(28px);
         }
-    }
 
     .contact-btn {
         border: $white solid 2px;

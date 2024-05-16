@@ -1,3 +1,14 @@
 .home {
+    .first-desc {
+        background-color: $midnight-green;
+        color: $white;
+        padding-inline-end: rem(200px);
+        .left-shape {
+            svg {
+                width: rem(200px);
+                height: rem(200px);
+            }
 
+        }
+    }
 }
