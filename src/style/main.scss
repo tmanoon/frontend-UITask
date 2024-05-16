@@ -1,3 +1,4 @@
-* {
-    color: red;
-}
+@import './basics/base';
+@import './basics/helpers';
+@import './setup/functions';
+@import './setup/typography';
