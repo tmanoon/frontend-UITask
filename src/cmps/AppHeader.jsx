@@ -7,7 +7,7 @@ return (
         </div>
         <div className="right-links">
             <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
+        <NavLink to='/about'>About</NavLink>
         </div>
         <button>
             Contact us
