@@ -1,4 +1,22 @@
 .app-header {
-    background-color: #014E56;
-    color: #fff;
+    background-color: $midnight-green;
+    color: $white;
+
+    .logo-and-links,
+    .contact-btn {
+        gap: 10px;
+
+        .right-links>* {
+            font-size: em(18px);
+            font-weight: 600;
+            line-height: em(28px);
+        }
+    }
+
+    .contact-btn {
+        border: $white solid 2px;
+        border-radius: 24px;
+    }
 }
+
+
