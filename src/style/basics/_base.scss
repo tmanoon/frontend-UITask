@@ -21,4 +21,51 @@ ul {
 button {
     width: em(153px);
     height: em(48px);
+    cursor: pointer;
+    padding: 9px 32px;
+
+    &.primary-light:disabled, &.dark:disabled {
+        background-color: $dark-green;
+            color: rgba(255, 255, 255, 0.518);
+    }
+
+    &.primary-light {
+        border: $white solid 2px;
+        border-radius: 24px;
+        background-color: transparent;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: #002529;
+        }
+
+    }
+
+    &.dark {
+        color: $dark-green;
+        border: $dark-green solid 2px;
+        background-color: transparent;
+
+        &:hover {
+            color: $white;
+            background-color: $dark-green;
+        }
+    }
+
+    &.secondary-light {
+        background-color: $white;
+        border: 2px solid $white;
+        color: #002529;
+
+        &:hover {
+            background-color: $rapture-blue;
+            border: 2px solid $rapture-blue;
+        }
+
+        &:disabled {
+            color: #002529;
+            background-color:  rgba(255, 255, 255, 0.518);
+        }
+    }
 }
