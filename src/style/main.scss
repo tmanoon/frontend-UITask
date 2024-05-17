@@ -1,8 +1,8 @@
+@import './setup/variables';
+@import './setup/functions';
+@import './setup/typography';
 @import './basics/base';
 @import './basics/helpers';
 @import './basics/layout';
-@import './setup/functions';
-@import './setup/typography';
-@import './setup/variables';
 @import './cmps/AppHeader.scss';
 @import './pages/Home.scss';
