@@ -38,4 +38,49 @@
         }
     }
 
+    .second-desc {
+        background-color: $sacramento-state-green;
+        padding: rem(165px);
+
+        .shape-and-txt {
+            position: relative;
+
+            h1 {
+                color: $white;
+                font-size: em(48px);
+                line-height: 48px;
+            }
+
+            svg {
+               position: absolute;
+               top: -48px; 
+            }
+        }
+
+        .explanations .explanation-container {
+
+            svg {
+                width: 72px;
+                height: 72px;
+            }
+
+            .text {
+
+                h2 {
+                    color: $light-coral;
+                    line-height: rem(28px);
+                    font-size: em(18px);
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: em(15px);
+                    line-height: em(25px);
+                    color: $white;
+                }
+            }
+
+        }
+    }
+
 }
