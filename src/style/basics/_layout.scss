@@ -2,3 +2,19 @@
     gap: 40px;
     margin-inline-start: 80px;
 }
+
+.first-desc .text {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: rem(200px);
+
+    h1 {
+        grid-column: 1;
+    }
+
+    p {
+        grid-column: 2;
+        align-self: end;
+        text-wrap: wrap;
+        margin-inline-start: 90px;
+    }
+}
