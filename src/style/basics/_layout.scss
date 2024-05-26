@@ -18,3 +18,26 @@
         padding-inline-start: rem(120px);
     }
 }
+
+.second-desc {
+    grid-template-columns: 1fr 1fr;
+    gap: rem(100px);
+
+    .shape-and-text {
+        grid-column: 1;
+    }
+
+    .explanations {
+        grid-column: 2;
+
+        .explanation-container {
+            gap: em(18px);
+
+            .text {
+                gap: em(18px);
+            }
+
+            margin-block-end: em(18px);
+        }
+    }
+}
