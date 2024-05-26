@@ -23,6 +23,9 @@ button {
     height: em(48px);
     cursor: pointer;
     padding: 9px 32px;
+    font-family: livvic-bold, Tahoma;
+    font-size: em(18px);
+    line-height: em(28px);
 
     &.primary-light:disabled, &.dark:disabled {
         background-color: $dark-green;
