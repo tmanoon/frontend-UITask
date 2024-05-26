@@ -2,13 +2,40 @@
     .first-desc {
         background-color: $midnight-green;
         color: $white;
-        padding-inline-end: rem(200px);
+        padding-inline: rem(165px); 
+        padding-block: rem(6px) rem(177px);
+        position: relative;
+
         .left-shape {
-            svg {
-                width: rem(200px);
-                height: rem(200px);
+            position: absolute;
+            left: 0;
+            top: rem(6px);
+        }
+
+        .top-shape {
+            position: absolute;
+            grid-column: 2;
+            left: rem(120px);
+        }
+
+        .text {
+            position: relative;
+
+            h1, span {
+                font-size: 100px;
+                line-height: 100px;
             }
 
+            span {
+              color: $light-coral;  
+            }
+        }
+
+        .bottom-shape {
+            position: absolute;
+            bottom: rem(-4px);
+            right: rem(165px);
         }
     }
+
 }
