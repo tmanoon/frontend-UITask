@@ -11,7 +11,7 @@ export function AppHeader() {
                     <NavLink to='/about'>About</NavLink>
                 </div>
             </div>
-            <button className="contact-btn">Contact us</button>
+            <button className="contact-btn primary-light">Contact us</button>
         </section>
     )
 }
