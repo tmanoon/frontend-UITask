@@ -83,4 +83,29 @@
         }
     }
 
+    .third-desc {
+        background-color: $midnight-green;
+        padding: rem(165px);
+        position: relative;
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .container {
+            
+            h1 {
+                color: $white;
+                font-size: em(48px);
+                line-height: rem(48px);
+
+                span {
+                    color: $rapture-blue;
+                }
+            }
+        }
+    }
+
 }
