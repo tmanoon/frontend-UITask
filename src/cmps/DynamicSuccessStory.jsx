@@ -1,4 +1,4 @@
-export function DynamicSuccessStory({ text, author, pic }) {
+export function DynamicSuccessStory({ text, author, picDetails }) {
     return (
         <div className="success-story">
             <svg width="67" height="56" viewBox="0 0 67 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,7 +8,7 @@ export function DynamicSuccessStory({ text, author, pic }) {
             </svg>
             <p>"{text}"</p>
             <h3>{author}</h3>
-            <img src={pic} alt={`${author} pic`} title={author} />
+            <img src={`https://xsgames.co/randomusers/assets/avatars/${picDetails.gender}/${picDetails.num}.jpg`} title={author} alt={`${author} picture`} />
         </div>
     )
 }
