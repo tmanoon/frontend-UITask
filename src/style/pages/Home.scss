@@ -147,6 +147,23 @@
 
     .fourth-desc {
         background-color: $light-coral;
+        height: rem(200px);
         position: relative;
+        align-items: center;
+        
+        svg {
+            align-self: end;
+            position: absolute;
+        }
+
+        .title-and-btn {
+            padding-inline: rem(263px);
+
+            h1 {
+                color: $sacramento-state-green;
+                line-height: rem(48px);
+                font-size: em(48px);
+            }
+        }
     }
 }

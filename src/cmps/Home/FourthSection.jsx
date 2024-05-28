@@ -1,6 +1,6 @@
 export function FourthSection() {
     return (
-        <article className="fourth-desc">
+        <article className="fourth-desc grid">
             <svg width="200" height="144" viewBox="0 0 200 144" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Group 8">
                     <rect id="Rectangle" x="100" y="144" width="100" height="100" transform="rotate(180 100 144)" fill="#2C6269" />
