@@ -1,8 +1,12 @@
 .home {
+    
+    & > * {
+        padding: rem(165px);
+    }
+    
     .first-desc {
         background-color: $midnight-green;
         color: $white;
-        padding-inline: rem(165px);
         padding-block: rem(6px) rem(177px);
         position: relative;
 
@@ -41,7 +45,6 @@
 
     .second-desc {
         background-color: $sacramento-state-green;
-        padding: rem(165px);
 
         .shape-and-txt {
             position: relative;
@@ -86,7 +89,6 @@
 
     .third-desc {
         background-color: $midnight-green;
-        padding: rem(165px);
         position: relative;
 
         svg {
@@ -150,14 +152,14 @@
         height: rem(200px);
         position: relative;
         align-items: center;
-        
+        padding-block: rem(50px);
         svg {
             align-self: end;
             position: absolute;
         }
 
         .title-and-btn {
-            padding-inline: rem(263px);
+            padding-inline: rem(263px - 165px);
 
             h1 {
                 color: $sacramento-state-green;
