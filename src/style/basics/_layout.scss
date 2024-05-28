@@ -41,3 +41,14 @@
         }
     }
 }
+
+.third-desc {
+    .stories {
+        grid-auto-flow: column;
+
+        .success-story {
+            grid-auto-flow: row;
+            justify-items: center;
+        }
+    }
+}

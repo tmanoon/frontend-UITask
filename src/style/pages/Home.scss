@@ -2,7 +2,7 @@
     .first-desc {
         background-color: $midnight-green;
         color: $white;
-        padding-inline: rem(165px); 
+        padding-inline: rem(165px);
         padding-block: rem(6px) rem(177px);
         position: relative;
 
@@ -21,13 +21,14 @@
         .text {
             position: relative;
 
-            h1, span {
+            h1,
+            span {
                 font-size: 100px;
                 line-height: 100px;
             }
 
             span {
-              color: $light-coral;  
+                color: $light-coral;
             }
         }
 
@@ -52,8 +53,8 @@
             }
 
             svg {
-               position: absolute;
-               top: -48px; 
+                position: absolute;
+                top: -48px;
             }
         }
 
@@ -94,18 +95,53 @@
             top: 0;
         }
 
-        .container {
-            
+        .header-and-stories {
             h1 {
                 color: $white;
                 font-size: em(48px);
                 line-height: rem(48px);
+                text-align: center;
 
                 span {
                     color: $rapture-blue;
                 }
             }
         }
-    }
 
+        .stories {
+            margin-block-start: rem(28px);
+
+            .success-story {
+                position: relative;
+
+                svg {
+                    left: em(142px);
+                    z-index: 2;
+                }
+
+                p {
+                    color: $white;
+                    font-size: em(15px);
+                    line-height: rem(25px);
+                    text-align: center;
+                    z-index: 5;
+                    margin-block-end: rem(25px);
+                }
+
+                h3 {
+                    color: $rapture-blue;
+                    font-size: em(18px);
+                    line-height: rem(28px);
+                    margin-block-end: rem(28px);
+                }
+
+                img {
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 50%;
+                    border: 2px solid $rapture-blue;
+                }
+            }
+        }
+    }
 }
