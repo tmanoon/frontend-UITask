@@ -1,0 +1,32 @@
+.about {
+
+    &>* {
+        padding-inline: rem(165px);
+    }
+
+    .first-section {
+        background-color: $midnight-green;
+        padding-block: rem(120px);
+        position: relative;
+
+        h1 {
+            color: $white;
+            font-size: em(64px);
+            line-height: rem(100px);
+        }
+
+        .shape-and-txt { 
+            grid-column: 2 / 4;
+
+            p {
+                color: $white;
+            }
+        }
+
+        .right-shape {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
