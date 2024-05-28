@@ -26,15 +26,17 @@ button {
     font-family: livvic-bold, Tahoma;
     font-size: em(18px);
     line-height: em(28px);
+    border-radius: 24px;
 
-    &.primary-light:disabled, &.dark:disabled {
+    &.primary-light:disabled,
+    &.dark:disabled {
         background-color: $dark-green;
-            color: rgba(255, 255, 255, 0.518);
+        color: rgba(255, 255, 255, 0.518);
     }
 
     &.primary-light {
         border: $white solid 2px;
-        border-radius: 24px;
+
         background-color: transparent;
         color: $white;
 
@@ -68,7 +70,7 @@ button {
 
         &:disabled {
             color: #002529;
-            background-color:  rgba(255, 255, 255, 0.518);
+            background-color: rgba(255, 255, 255, 0.518);
         }
     }
 }
