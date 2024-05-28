@@ -2,7 +2,7 @@ export function FirstSection() {
     return (
         <article className="first-section grid">
             <h1>About</h1>
-            <div className="shape-and-txt">
+            <div className="shape-and-txt flex column space-between">
                 <svg width="50" height="4" viewBox="0 0 50 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="50" height="4" fill="#F67E7E" />
                 </svg>
