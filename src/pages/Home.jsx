@@ -1,4 +1,5 @@
 import { DynamicExplanationCmp } from "../cmps/DynamicExplanationCmp"
+import { DynamicSuccessStory } from "../cmps/DynamicSuccessStory"
 
 export function Home() {
     return (
@@ -78,10 +79,13 @@ export function Home() {
                         <path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M47 56H147V60H47V56ZM47 64H147V68H47V64ZM147 72H47V76H147V72ZM47 80H147V84H47V80ZM147 88H47V92H147V88ZM47 96H147V100H47V96Z" fill="#79C8C7" />
                     </g>
                 </svg>
-                <div className="container">
+                <div className="header-and-stories">
                     <h1>Delivering real results for top companies. Some of our <span>success stories.</span></h1>
                     <div className="stories">
-                        
+                        <DynamicSuccessStory text='The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.'
+                            author='Kady Baker' picDetails={{gender: 'female', num: '1'}} />
+                        <DynamicSuccessStory text='We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!' author='Aiysha Reese' picDetails={{gender: 'female', num: '2'}} />
+                        <DynamicSuccessStory text='Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.' author='Arthur Clarke' picDetails={{gender: 'male', num: 3}} />
                     </div>
                 </div>
             </article>
