@@ -81,7 +81,7 @@ export function Home() {
                 </svg>
                 <div className="header-and-stories">
                     <h1>Delivering real results for top companies. Some of our <span>success stories.</span></h1>
-                    <div className="stories">
+                    <div className="stories grid">
                         <DynamicSuccessStory text='The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.'
                             author='Kady Baker' picDetails={{gender: 'female', num: '1'}} />
                         <DynamicSuccessStory text='We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!' author='Aiysha Reese' picDetails={{gender: 'female', num: '2'}} />
