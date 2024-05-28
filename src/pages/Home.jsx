@@ -11,7 +11,6 @@ export function Home() {
             <SecondSection />
             <ThirdSection />
             <FourthSection />
-            <AppFooter />
         </section>
     )
 }
