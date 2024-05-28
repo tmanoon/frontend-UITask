@@ -2,6 +2,7 @@ import { FirstSection } from "../cmps/Home/FirstSection"
 import { SecondSection } from "../cmps/Home/SecondSection"
 import { ThirdSection } from "../cmps/Home/ThirdSection"
 import { FourthSection } from "../cmps/Home/FourthSection"
+import { AppFooter } from "../cmps/AppFooter"
 
 export function Home() {
     return (
@@ -10,6 +11,7 @@ export function Home() {
             <SecondSection />
             <ThirdSection />
             <FourthSection />
+            <AppFooter />
         </section>
     )
 }
