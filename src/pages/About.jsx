@@ -1,5 +1,9 @@
+import { FirstSection } from "../cmps/About/FirstSection";
+
 export function About() {
     return (
-        <div>about</div>
+        <section className="about">
+            <FirstSection />
+        </section> 
     )
 }
