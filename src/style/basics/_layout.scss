@@ -58,4 +58,11 @@
         grid-template-columns: repeat(3, 1fr);
 
     }
+
+    .second-section {
+        .directors-list {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
 }
