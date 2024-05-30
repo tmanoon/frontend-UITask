@@ -1,0 +1,21 @@
+.fourth-desc {
+    background-color: $light-coral;
+    height: rem(200px);
+    position: relative;
+    align-items: center;
+    padding-block: rem(50px);
+    svg {
+        align-self: end;
+        position: absolute;
+    }
+
+    .title-and-btn {
+        padding-inline: rem(263px - 165px);
+
+        h1 {
+            color: $sacramento-state-green;
+            line-height: rem(48px);
+            font-size: em(48px);
+        }
+    }
+}
