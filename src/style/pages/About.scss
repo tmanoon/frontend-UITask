@@ -38,5 +38,16 @@
             left: 0;
             top: 0;
         }
+
+        .directors {
+
+                h1 {
+                    font-size: em(48px);
+                    line-height: rem(48px);
+                    text-align: center;
+                    color: $white;
+                    margin-block-end: rem(48px);
+                }
+        }
     }
 }
