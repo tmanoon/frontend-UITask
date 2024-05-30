@@ -1,7 +1,7 @@
 .about {
 
     &>* {
-        padding-inline: rem(165px);
+        padding: rem(165px);
     }
 
     .first-section {
@@ -27,6 +27,16 @@
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+    }
+
+    .second-section {
+        position: relative;
+        background-color: $deep-jungle-green;
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
 }
