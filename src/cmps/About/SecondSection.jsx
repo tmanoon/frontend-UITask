@@ -3,7 +3,7 @@ import { DynamicDirectorCmp } from "./DynamicDirectorCmp"
 export function SecondSection() {
     return (
         <article className="second-section">
-            <svg width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="right-shape" width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="100" height="100" transform="matrix(1 0 0 -1 0 100)" fill="#2C6269" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 200C-55.2285 200 -100 155.228 -100 100C-100 44.7715 -55.2285 0 0 0C55.2285 0 100 44.7715 100 100C100 155.228 55.2285 200 0 200ZM0 133C-18.2254 133 -33 118.225 -33 100C-33 81.7746 -18.2254 67 0 67C18.2254 67 33 81.7746 33 100C33 118.225 18.2254 133 0 133Z" fill="#012F34" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 56H100V60H0V56ZM0 64H100V68H0V64ZM100 72H0V76H100V72ZM0 80H100V84H0V80ZM100 88H0V92H100V88ZM0 96H100V100H0V96Z" fill="#79C8C7" />
