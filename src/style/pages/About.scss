@@ -1,3 +1,5 @@
+$turquoise: #C4FFFE;
+
 .about {
 
     &>* {
@@ -47,6 +49,42 @@
                     text-align: center;
                     color: $white;
                     margin-block-end: rem(48px);
+                }
+
+                .director {
+                    position: relative;
+                    background-color: $sacramento-state-green;
+                    width: rem(350px);
+                    height: rem(233px);
+                    margin-block-end: rem(28px);
+
+                    img {
+                        width: rem(96px);
+                        height: rem(96px);
+                        border-radius: 50%;
+                        border: 2px solid $turquoise;
+                        margin-block-end: rem(18px);
+                    }
+
+                    h3 {
+                        color: $rapture-blue;
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    span {
+                        color: $sacramento-state-green;
+                        background-color: $light-coral;
+                        border: none;
+                        border-radius: 50%;
+                        width: rem(56px);
+                        height: rem(56px);
+                        position: absolute;
+                        bottom: rem(-28px);
+                        cursor: pointer;
+                    }
                 }
         }
     }
