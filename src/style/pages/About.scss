@@ -35,7 +35,7 @@ $turquoise: #C4FFFE;
     .second-section {
         position: relative;
         background-color: $deep-jungle-green;
-        svg {
+        .right-shape {
             position: absolute;
             left: 0;
             top: 0;
@@ -68,10 +68,20 @@ $turquoise: #C4FFFE;
 
                     h3 {
                         color: $rapture-blue;
+
+                        &.clicked-director {
+                            margin-block: rem(32px) rem(18px);
+                        }
                     }
 
                     p {
                         display: none;
+                        color: $white;
+
+                        &.clicked-director {
+                            padding-inline: rem(32px);
+                            margin-block-end: rem(18px);
+                        }
                     }
 
                     span {
@@ -83,7 +93,12 @@ $turquoise: #C4FFFE;
                         height: rem(56px);
                         position: absolute;
                         bottom: rem(-28px);
+                        font-size: 1.7em;
                         cursor: pointer;
+
+                        &.clicked-director {
+                            background-color: $rapture-blue;
+                        }
                     }
                 }
         }
