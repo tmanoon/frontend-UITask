@@ -6,6 +6,7 @@ import { AppHeader } from './cmps/AppHeader'
 import { About } from './pages/About'
 import { Home } from './pages/Home'
 import { AppFooter } from './cmps/AppFooter'
+import { Contact } from './pages/Contact'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <AppFooter />
       </Router>
