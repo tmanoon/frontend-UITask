@@ -2,9 +2,15 @@ import { DynamicTextArea } from "../cmps/Contact/DynamicTextArea"
 import { DynamicExplanationCmp } from "../cmps/DynamicExplanationCmp"
 
 export function Contact() {
+
+    function handleForm(e) {
+        e.preventDefault()
+        console.log('Form submitted successfully!')
+    }
+
     return (
         <section className="contact">
-            <svg width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="left-shape" width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="100" height="100" transform="matrix(1 0 0 -1 0 100)" fill="#2C6269" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 200C-55.2285 200 -100 155.228 -100 100C-100 44.7715 -55.2285 0 0 0C55.2285 0 100 44.7715 100 100C100 155.228 55.2285 200 0 200ZM0 133C-18.2254 133 -33 118.225 -33 100C-33 81.7746 -18.2254 67 0 67C18.2254 67 33 81.7746 33 100C33 118.225 18.2254 133 0 133Z" fill="#012F34" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 56H100V60H0V56ZM0 64H100V68H0V64ZM100 72H0V76H100V72ZM0 80H100V84H0V80ZM100 88H0V92H100V88ZM0 96H100V100H0V96Z" fill="#79C8C7" />
@@ -40,12 +46,20 @@ export function Contact() {
                 </div>
             </div>
             <div className="fields">
-                <DynamicTextArea placeholder={'Name'} />
-                <DynamicTextArea placeholder={'Email Address'} />
-                <DynamicTextArea placeholder={'Company Name'} />
-                <DynamicTextArea placeholder={'Title'} />
-                <DynamicTextArea placeholder={'Message'} rows={3} />
+                <form onSubmit={(ev) => handleForm(ev)}>
+                    <DynamicTextArea placeholder={'Name'} />
+                    <DynamicTextArea placeholder={'Email Address'} />
+                    <DynamicTextArea placeholder={'Company Name'} />
+                    <DynamicTextArea placeholder={'Title'} />
+                    <DynamicTextArea placeholder={'Message'} rows={3} />
+                </form>
             </div>
+            <svg className="right-shape" width="100" height="226" viewBox="0 0 100 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M200.5 100.5C200.5 45.2715 155.728 0.5 100.5 0.5C45.2715 0.5 0.5 45.2715 0.5 100.5C0.5 155.728 45.2715 200.5 100.5 200.5C155.728 200.5 200.5 155.728 200.5 100.5ZM133.5 100.5C133.5 82.2746 118.725 67.5 100.5 67.5C82.2746 67.5 67.5 82.2746 67.5 100.5C67.5 118.725 82.2746 133.5 100.5 133.5C118.725 133.5 133.5 118.725 133.5 100.5Z" fill="#012F34" />
+                <rect x="43.5" y="0.5" width="43" height="43" transform="rotate(90 43.5 0.5)" fill="#79C8C7" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M200.5 124.987C200.5 69.758 155.728 24.9865 100.5 24.9865C45.2715 24.9865 0.5 69.758 0.5 124.987C0.5 180.215 45.2715 224.987 100.5 224.987C155.728 224.987 200.5 180.215 200.5 124.987ZM133.5 124.987C133.5 106.761 118.725 91.9865 100.5 91.9865C82.2746 91.9865 67.5 106.761 67.5 124.987C67.5 143.212 82.2746 157.987 100.5 157.987C118.725 157.987 133.5 143.212 133.5 124.987Z" fill="#F67E7E" />
+            </svg>
+
         </section>
     )
 }
