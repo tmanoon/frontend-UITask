@@ -1,7 +1,7 @@
 .contact {
     position: relative;
     background-color: $midnight-green;
-    padding-inline: rem(165px);
+    padding: rem(165px);
 
     svg.left-shape,
     svg.right-shape {
@@ -17,4 +17,44 @@
         right: 0;
         bottom: 0;
     }
+
+    .header-and-explanations {
+
+        h1 {
+            font-size: em(64px);
+            line-height: rem(100px);
+            color: $white;
+            margin-block-end: rem(32px);
+        }
+
+        h3 {
+            color: $light-coral;
+            font-size: em(32px);
+            line-height: rem(48px);
+            margin-block-end: rem(16px);
+        }
+
+        .explanations {
+            .explanation-container {
+
+                margin-block-end: .5rem;
+                gap: rem(18px);
+
+                svg {
+                    width: rem(72px);
+                    height: rem(72px);
+                }
+
+                .text {
+
+                    h2 {
+                        color: $white;
+                        font-size: em(18px);
+                        line-height: rem(28px);
+                    }
+                }
+            }
+        }
+    }
 }
+
