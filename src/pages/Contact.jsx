@@ -46,7 +46,7 @@ export function Contact() {
                 </div>
             </div>
             <div className="fields">
-                <form onSubmit={(ev) => handleForm(ev)} className="flex column">
+                <form onSubmit={(ev) => handleForm(ev)} className="flex column space-between">
                     <DynamicTextArea placeholder={'Name'} />
                     <DynamicTextArea placeholder={'Email Address'} />
                     <DynamicTextArea placeholder={'Company Name'} />

@@ -1,7 +1,7 @@
 .contact {
     position: relative;
     background-color: $midnight-green;
-    padding: rem(165px);
+    padding: rem(25px) rem(165px) rem(165px);
 
     svg.left-shape,
     svg.right-shape {
@@ -56,5 +56,47 @@
             }
         }
     }
-}
 
+    .fields {
+
+        form {
+            height: 100%;
+
+            textarea {
+                
+                padding: 8px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $white;
+                margin-block-end: 8px;
+                resize: none;
+                outline: none;
+
+                &:hover {
+                    border-bottom: 1px solid $light-coral;
+                }
+
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.6;
+                }
+
+                &:hover::placeholder {
+                    color: $light-coral;
+                }
+            
+                &:focus::placeholder {
+                    opacity: 1;
+                }
+            }
+
+            button {
+                width: rem(123px);
+                height: rem(48px);
+                font-size: em(18px);
+                line-height: rem(28px);
+                margin-block-start: 1em;
+            }
+        }
+    }
+}
