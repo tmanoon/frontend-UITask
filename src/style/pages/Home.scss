@@ -1,47 +1,92 @@
 .home {
-    
-    & > * {
-        padding: 8.727vw;
-    }
-    
-    .first-desc {
-        background-color: $midnight-green;
-        color: $white;
-        padding-block: rem(6px) rem(177px);
-        position: relative;
 
-        .left-shape {
-            position: absolute;
-            left: 0;
-            top: rem(6px);
+    @media (min-width: 375px) {
+        &>* {
+            padding: 8.727vw;
         }
 
-        .top-shape {
-            position: absolute;
-            grid-column: 2;
-            left: rem(120px);
-        }
-
-        .text {
+        .first-desc {
+            background-color: $midnight-green;
+            color: $white;
+            padding-block: rem(6px) rem(177px);
             position: relative;
 
-            h1,
-            span {
-                font-size: 100px;
-                line-height: 100px;
+            .left-shape {
+                display: none;
             }
 
-            span {
-                color: $light-coral;
+            .top-shape {
+               display: none;
             }
-        }
 
-        .bottom-shape {
-            position: absolute;
-            bottom: rem(-4px);
-            right: 8.727vw;
+            .text {
+                position: relative;
+
+                h1,
+                span {
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                span {
+                    color: $light-coral;
+                }
+
+                p {
+                    font-size: em(15px);
+                    line-height: rem(28px);
+                    text-align: center;
+                }
+            }
+
+            .bottom-shape {
+                position: absolute;
+                bottom: rem(-4px);
+                left: rem(9px);
+            }
         }
     }
+
+
+    // .first-desc {
+    //     background-color: $midnight-green;
+    //     color: $white;
+    //     padding-block: rem(6px) rem(177px);
+    //     position: relative;
+
+    //     .left-shape {
+    //         position: absolute;
+    //         left: 0;
+    //         top: rem(6px);
+    //     }
+
+    //     .top-shape {
+    //         position: absolute;
+    //         grid-column: 2;
+    //         left: rem(120px);
+    //     }
+
+    //     .text {
+    //         position: relative;
+
+    //         h1,
+    //         span {
+    //             font-size: 100px;
+    //             line-height: 100px;
+    //         }
+
+    //         span {
+    //             color: $light-coral;
+    //         }
+    //     }
+
+    //     .bottom-shape {
+    //         position: absolute;
+    //         bottom: rem(-4px);
+    //         right: 8.727vw;
+    //     }
+    // }
 
     .second-desc {
         background-color: $sacramento-state-green;
