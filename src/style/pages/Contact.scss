@@ -1,17 +1,20 @@
 .contact {
     position: relative;
+    background-color: $midnight-green;
+    padding-inline: rem(165px);
 
-    svg { 
+    svg.left-shape,
+    svg.right-shape {
         position: absolute;
+    }
 
-        &.left-shape {
-            left: 0;
-            top: 0;
-        }
+    .left-shape {
+        left: 0;
+        top: 0;
+    }
 
-        &.right-shape {
-            right: 0;
-            bottom: 0;
-        }
+    .right-shape {
+        right: 0;
+        bottom: 0;
     }
 }

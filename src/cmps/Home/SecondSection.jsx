@@ -1,4 +1,4 @@
-import { DynamicExplanationCmp } from "./DynamicExplanationCmp"
+import { DynamicExplanationCmp } from "../DynamicExplanationCmp"
 
 export function SecondSection() {
     return (
