@@ -52,6 +52,7 @@ export function Contact() {
                     <DynamicTextArea placeholder={'Company Name'} />
                     <DynamicTextArea placeholder={'Title'} />
                     <DynamicTextArea placeholder={'Message'} rows={3} />
+                    <button className="secondary-light">Submit</button>
                 </form>
             </div>
             <svg className="right-shape" width="100" height="226" viewBox="0 0 100 226" fill="none" xmlns="http://www.w3.org/2000/svg">
