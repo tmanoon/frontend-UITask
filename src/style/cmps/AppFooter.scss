@@ -1,38 +1,99 @@
 .footer {
-    padding-inline: 8.727vw;
-    padding-block: rem(28px);
-    background-color: $dark-green;
-    color: $white;
+    @media (min-width: 375px) {
+        padding-inline: rem(24px);
+        padding-block: rem(65px);
+        background-color: $dark-green;
+        color: $white;
+        position: relative;
+        flex-direction: column;
+        height: rem(432px);
 
-    .logo-links-address {
-        gap: rem(82px);
-        flex-wrap: wrap;
-        height: 100px;
+        p, pre {
+            text-align: center;
+        }
 
-        .logo-and-links {
+        .logo-links-address {
+            
+            gap: rem(24px);
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
 
-            .links {
-                gap: em(28px);
+            .logo-and-links {
+                gap: rem(24px);
+                align-items: center;
+
+                .logo {
+                    width: rem(96px);
+                    height: rem(24px);
+                }
+
+                .links {
+                    gap: em(28px);
+
+                    & > * {
+                        font-size: em(15px);
+                        line-height: rem(25px);
+                    }
+                }
+            }
+
+            p {
+                opacity: 60%;
+                font-size: em(15px);
+                line-height: rem(25px);
             }
         }
 
-        p {
-            opacity: 60%;
-            font-size: em(15px);
-            line-height: rem(25px);
+        .media-and-pre {
+            gap: rem(24px);
+
+            .icons {
+                align-self: center;
+                gap: rem(18px);
+            }
+
+            pre {
+                opacity: 60%;
+            }
         }
     }
-
-    .media-and-pre {
-        .icons {
-            align-self: flex-end;
-            gap: rem(18px);
-        }
-
-        pre {
-            opacity: 60%;
-        }
-    }
-
 
 }
+
+// .footer {
+//     padding-inline: 8.727vw;
+//     padding-block: rem(28px);
+//     background-color: $dark-green;
+//     color: $white;
+
+//     .logo-links-address {
+//         gap: rem(82px);
+//         flex-wrap: wrap;
+//         height: 100px;
+
+//         .logo-and-links {
+
+//             .links {
+//                 gap: em(28px);
+//             }
+//         }
+
+//         p {
+//             opacity: 60%;
+//             font-size: em(15px);
+//             line-height: rem(25px);
+//         }
+//     }
+
+//     .media-and-pre {
+//         .icons {
+//             align-self: flex-end;
+//             gap: rem(18px);
+//         }
+
+//         pre {
+//             opacity: 60%;
+//         }
+//     }
+// }
