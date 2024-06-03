@@ -54,11 +54,12 @@ $turquoise: #C4FFFE;
         .second-section {
             position: relative;
             background-color: $deep-jungle-green;
+            overflow: hidden;
 
             .right-shape {
                 position: absolute;
-                left: 0;
-                top: 0;
+                left: rem(-50px);
+                top: rem(-100px);
             }
 
             .directors {
