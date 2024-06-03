@@ -1,14 +1,60 @@
 .app-header {
-    background-color: $midnight-green;
-    color: $white;
-    padding-block: rem(73px);
-    padding-inline: 8.727vw;
+    @media (max-width: 430px) {
+        background-color: $midnight-green;
+        color: $white;
+        padding-inline: 8.727vw;
+        padding-block: 2.666vh;
+        position: relative;
 
-        .right-links>* {
-            font-size: em(18px);
-            font-weight: 600;
-            line-height: em(28px);
+        .layout-for-menu {
+            background-color: #00000080;
+            opacity: .5;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
         }
+
+        .right-links {
+            display: none;
+        }
+
+        .hamburger,
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .buttons {
+            .contact-btn {
+                display: none;
+            }
+
+        }
+
+        .hamburger-menu-links {
+            background-color: $police-blue;
+            width: 60vw;
+            position: absolute;
+            z-index: 5;
+            
+            a {
+              color: $white;  
+            } 
+            
+        }
+    }
+
+
+    // padding-block: rem(73px);
+
+
+    // .right-links>* {
+    //     font-size: em(18px);
+    //     font-weight: 600;
+    //     line-height: em(28px);
+    // }
 }
-
-
