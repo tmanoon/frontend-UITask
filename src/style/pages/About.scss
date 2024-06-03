@@ -7,17 +7,23 @@ $turquoise: #C4FFFE;
             padding: rem(24px);
         }
 
+        .second-section,
+        .third-section {
+            overflow: hidden;
+        }
+
         .first-section {
             background-color: $midnight-green;
             padding-block: rem(70px);
             position: relative;
-            
+
             .text {
                 height: rem(252px);
                 gap: .5rem;
             }
 
-            h1, .shape-and-txt p {
+            h1,
+            .shape-and-txt p {
                 text-align: center;
             }
 
@@ -54,7 +60,6 @@ $turquoise: #C4FFFE;
         .second-section {
             position: relative;
             background-color: $deep-jungle-green;
-            overflow: hidden;
 
             .right-shape {
                 position: absolute;
@@ -129,17 +134,20 @@ $turquoise: #C4FFFE;
             position: relative;
             background-color: $sacramento-state-green;
             color: $white;
+            height: rem(623px);
+            padding-block: rem(88px);
 
             .left-shape {
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: rem(-100px);
+                left: rem(-100px);
             }
 
             h1 {
-                font-size: em(48px);
-                line-height: rem(48px);
+                font-size: em(32px);
+                line-height: rem(32px);
                 text-align: center;
+                margin-block-end: (100px);
             }
         }
     }
