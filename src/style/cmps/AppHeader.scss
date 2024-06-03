@@ -1,22 +1,33 @@
 .app-header {
-    @media (max-width: 430px) {
+    @media (min-width: 375px) {
         background-color: $midnight-green;
         color: $white;
-        padding-inline: 8.727vw;
-        padding-block: 2.666vh;
-        position: relative;
+        padding-inline: rem(24px);
+        padding-block: rem(48px);
 
         .layout-for-menu {
             background-color: #00000080;
             opacity: .5;
             width: 100%;
             height: 100%;
-            position: absolute;
-            z-index: 3;
+            position: fixed;
+            z-index: 10;
+            right: 0;
+            top: 0;
+        }
+
+        .logo-and-links {
+
+            .logo {
+                height: rem(32px);
+                width: rem(128px);
+            }
         }
 
         .right-links {
             display: none;
+            gap: 40px;
+            margin-inline-start: 80px;
         }
 
         .hamburger,
@@ -37,14 +48,30 @@
 
         .hamburger-menu-links {
             background-color: $police-blue;
-            width: 60vw;
-            position: absolute;
-            z-index: 5;
-            
+            width: rem(255px);
+            height: 100%;
+            position: fixed;
+            z-index: 20;
+            right: 0;
+            top: 0;
+            padding-inline-start: rem(28px);
+
             a {
               color: $white;  
             } 
             
+            span {
+                justify-content: flex-end;
+                padding-block-start: rem(56px);
+                padding-inline-end: rem(24px);
+            }
+
+            .bottom-shape {
+                position: absolute;
+                z-index: 15;
+                bottom: 0;
+                right: 0;
+            }
         }
     }
 
