@@ -43,10 +43,10 @@ export function AppHeader() {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99989 6.37869L2.98948 0.368286L0.868164 2.48961L6.87857 8.50001L0.868164 14.5104L2.98948 16.6317L8.99989 10.6213L15.0103 16.6317L17.1316 14.5104L11.1212 8.50001L17.1316 2.48961L15.0103 0.368286L8.99989 6.37869Z" fill="white" />
                         </svg>
                     </span>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/'><span onClick={(ev) => onMenuClick(ev)}>Home</span></NavLink>
+                    <NavLink to='/about'><span onClick={(ev) => onMenuClick(ev)}>About</span></NavLink>
                     <NavLink to='/contact'>
-                        <button className="primary-light">Contact us</button>
+                        <button className="primary-light" onClick={(ev) => onMenuClick(ev)}>Contact us</button>
                     </NavLink>
                     <svg className="bottom-shape" width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="100" y="100" width="100" height="100" transform="rotate(180 100 100)" fill="#2C6269" />
