@@ -2,46 +2,66 @@ $turquoise: #C4FFFE;
 
 .about {
 
-    &>* {
-        padding: 8.727vw;
-    }
-
-    .first-section {
-        background-color: $midnight-green;
-        padding-block: rem(120px);
-        position: relative;
-
-        h1 {
-            color: $white;
-            font-size: em(64px);
-            line-height: rem(100px);
+    @media (min-width: 375px) {
+        &>* {
+            padding: rem(24px);
         }
 
-        .shape-and-txt { 
-            grid-column: 2 / 4;
+        .first-section {
+            background-color: $midnight-green;
+            padding-block: rem(70px);
+            position: relative;
+            
+            .text {
+                height: rem(252px);
+                gap: .5rem;
+            }
 
-            p {
+            h1, .shape-and-txt p {
+                text-align: center;
+            }
+
+            h1 {
                 color: $white;
+                font-size: em(40px);
+                line-height: rem(40px);
+                grid-row: 1;
+            }
+
+            .shape-and-txt {
+                grid-row: 2;
+
+                svg {
+                    display: none;
+                }
+
+                p {
+                    color: $white;
+                    font-size: 15px;
+                    line-height: rem(28px);
+                    font-family: livvic-med;
+                    font-weight: 600;
+                }
+            }
+
+            .right-shape {
+                position: absolute;
+                right: 0;
+                bottom: rem(-100px);
             }
         }
 
-        .right-shape {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-    }
+        .second-section {
+            position: relative;
+            background-color: $deep-jungle-green;
 
-    .second-section {
-        position: relative;
-        background-color: $deep-jungle-green;
-        .right-shape {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+            .right-shape {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
 
-        .directors {
+            .directors {
 
                 h1 {
                     font-size: em(48px);
@@ -101,24 +121,147 @@ $turquoise: #C4FFFE;
                         }
                     }
                 }
-        }
-    }
-
-    .third-section {
-        position: relative;
-        background-color: $sacramento-state-green;
-        color: $white;
-
-        .left-shape {
-            position: absolute;
-            top: 0;
-            left: 0;
+            }
         }
 
-        h1 {
-            font-size: em(48px);
-            line-height: rem(48px);
-            text-align: center;
+        .third-section {
+            position: relative;
+            background-color: $sacramento-state-green;
+            color: $white;
+
+            .left-shape {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            h1 {
+                font-size: em(48px);
+                line-height: rem(48px);
+                text-align: center;
+            }
         }
     }
 }
+
+
+//     &>* {
+//         padding: 8.727vw;
+//     }
+
+//     .first-section {
+//         background-color: $midnight-green;
+//         padding-block: rem(120px);
+//         position: relative;
+
+//         h1 {
+//             color: $white;
+//             font-size: em(64px);
+//             line-height: rem(100px);
+//         }
+
+//         .shape-and-txt { 
+//             grid-column: 2 / 4;
+
+//             p {
+//                 color: $white;
+//             }
+//         }
+
+//         .right-shape {
+//             position: absolute;
+//             right: 0;
+//             bottom: 0;
+//         }
+//     }
+
+//     .second-section {
+//         position: relative;
+//         background-color: $deep-jungle-green;
+//         .right-shape {
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//         }
+
+//         .directors {
+
+//                 h1 {
+//                     font-size: em(48px);
+//                     line-height: rem(48px);
+//                     text-align: center;
+//                     color: $white;
+//                     margin-block-end: rem(48px);
+//                 }
+
+//                 .director {
+//                     position: relative;
+//                     background-color: $sacramento-state-green;
+//                     width: rem(350px);
+//                     height: rem(233px);
+//                     margin-block-end: rem(28px);
+
+//                     img {
+//                         width: rem(96px);
+//                         height: rem(96px);
+//                         border-radius: 50%;
+//                         border: 2px solid $turquoise;
+//                         margin-block: rem(18px);
+//                     }
+
+//                     h3 {
+//                         color: $rapture-blue;
+
+//                         &.clicked-director {
+//                             margin-block: rem(32px) rem(18px);
+//                         }
+//                     }
+
+//                     p {
+//                         display: none;
+//                         color: $white;
+
+//                         &.clicked-director {
+//                             padding-inline: rem(32px);
+//                             margin-block-end: rem(18px);
+//                         }
+//                     }
+
+//                     span {
+//                         color: $sacramento-state-green;
+//                         background-color: $light-coral;
+//                         border: none;
+//                         border-radius: 50%;
+//                         width: rem(56px);
+//                         height: rem(56px);
+//                         position: absolute;
+//                         bottom: rem(-28px);
+//                         font-size: 1.7em;
+//                         cursor: pointer;
+
+//                         &.clicked-director {
+//                             background-color: $rapture-blue;
+//                         }
+//                     }
+//                 }
+//         }
+//     }
+
+//     .third-section {
+//         position: relative;
+//         background-color: $sacramento-state-green;
+//         color: $white;
+
+//         .left-shape {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//         }
+
+//         h1 {
+//             font-size: em(48px);
+//             line-height: rem(48px);
+//             text-align: center;
+//         }
+//     }
+// }
