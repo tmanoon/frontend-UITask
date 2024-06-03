@@ -11,6 +11,7 @@ export function ThirdSection() {
             </svg>
             <h1>Some of our clients</h1>
             <div className="logos-of-brands flex">
+
             </div>
         </article>
     )
