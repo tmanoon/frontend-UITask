@@ -117,9 +117,13 @@
 
     .second-section {
         .directors-list {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: rem(28px);
+            @media (min-width: 375px) {
+                grid-auto-flow: row;
+                grid-template-rows: 1fr;
+            }
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-rows: repeat(2, 1fr);
+            // gap: rem(28px);
         }
     }
 }
