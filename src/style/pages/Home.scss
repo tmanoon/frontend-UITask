@@ -60,7 +60,8 @@
                 h1 {
                     color: $white;
                     font-size: em(32px);
-                    line-height: 32px;
+                    line-height: rem(32px);
+                    font-weight: 700;
                 }
 
                 svg {
@@ -179,12 +180,14 @@
     }
 
     @media (min-width: 768px) {
+
         &>* {
-            padding-inline: rem(45px);
+            padding-inline: rem(97px);
         }
 
         .first-desc {
             padding-block: rem(64px) rem(177px);
+            padding-inline: rem(49px);
             position: relative;
             height: rem(524px);
 
@@ -207,6 +210,67 @@
 
             .bottom-shape {
                 left: rem(205px);
+            }
+        }
+
+        .second-desc {
+            background-color: $sacramento-state-green;
+            padding-block: 6em;
+            position: relative;
+
+            .shape-and-txt,
+            .explanations {
+                width: rem(573px);
+                display: flex;
+                flex-direction: column;
+                gap: rem(24px);
+            }
+
+            .shape-and-txt {
+
+                svg {
+                    top: 0;
+                }
+
+                h1 {
+                    margin-block-start: rem(32px);
+                }
+            }
+
+            .explanations {
+
+                .explanation-container {
+                    flex-direction: row;
+                    gap: 1rem;
+
+                    svg {
+                        width: 56px;
+                        height: 56px;
+                    }
+
+                    .text {
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        height: rem(94px);
+
+                        h2 {
+                            margin-block: 0;
+                        }
+
+                        p {
+                            text-align: start;
+                            margin-block-end: 0;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+            }
+
+            .bottom-shape {
+                position: absolute;
+                top: 0;
+                right: 0;
             }
         }
     }
