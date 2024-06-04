@@ -115,6 +115,7 @@
             background-color: $midnight-green;
             position: relative;
             padding-block: rem(132px);
+            height: rem(1410px);
 
             .top-shape {
                 position: absolute;
@@ -142,8 +143,7 @@
                     position: relative;
 
                     svg {
-                        left: em(142px);
-                        z-index: 2;
+                        position: absolute;
                     }
 
                     p {
@@ -152,7 +152,7 @@
                         line-height: rem(25px);
                         text-align: center;
                         z-index: 5;
-                        margin-block-end: rem(25px);
+                        margin-block: rem(36px) rem(25px);
                     }
 
                     h3 {
@@ -170,12 +170,12 @@
                     }
                 }
             }
+        }
 
-            .bottom-shape {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
+        .bottom-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
 
@@ -273,151 +273,155 @@
                 right: 0;
             }
         }
+
+        .third-desc {
+            padding-block: rem(100px);
+        }
     }
 }
 
 
 
-// .first-desc {
-//     background-color: $midnight-green;
-//     color: $white;
-//     padding-block: rem(6px) rem(177px);
-//     position: relative;
+    // .first-desc {
+    //     background-color: $midnight-green;
+    //     color: $white;
+    //     padding-block: rem(6px) rem(177px);
+    //     position: relative;
 
-//     .left-shape {
-//         position: absolute;
-//         left: 0;
-//         top: rem(6px);
-//     }
+    //     .left-shape {
+    //         position: absolute;
+    //         left: 0;
+    //         top: rem(6px);
+    //     }
 
-//     .top-shape {
-//         position: absolute;
-//         grid-column: 2;
-//         left: rem(120px);
-//     }
+    //     .top-shape {
+    //         position: absolute;
+    //         grid-column: 2;
+    //         left: rem(120px);
+    //     }
 
-//     .text {
-//         position: relative;
+    //     .text {
+    //         position: relative;
 
-//         h1,
-//         span {
-//             font-size: 100px;
-//             line-height: 100px;
-//         }
+    //         h1,
+    //         span {
+    //             font-size: 100px;
+    //             line-height: 100px;
+    //         }
 
-//         span {
-//             color: $light-coral;
-//         }
-//     }
+    //         span {
+    //             color: $light-coral;
+    //         }
+    //     }
 
-//     .bottom-shape {
-//         position: absolute;
-//         bottom: rem(-4px);
-//         right: 8.727vw;
-//     }
-// }
+    //     .bottom-shape {
+    //         position: absolute;
+    //         bottom: rem(-4px);
+    //         right: 8.727vw;
+    //     }
+    // }
 
-//     .second-desc {
-//         background-color: $sacramento-state-green;
+    //     .second-desc {
+    //         background-color: $sacramento-state-green;
 
-//         .shape-and-txt {
-//             position: relative;
+    //         .shape-and-txt {
+    //             position: relative;
 
-//             h1 {
-//                 color: $white;
-//                 font-size: em(48px);
-//                 line-height: 48px;
-//             }
+    //             h1 {
+    //                 color: $white;
+    //                 font-size: em(48px);
+    //                 line-height: 48px;
+    //             }
 
-//             svg {
-//                 position: absolute;
-//                 top: -48px;
-//             }
-//         }
+    //             svg {
+    //                 position: absolute;
+    //                 top: -48px;
+    //             }
+    //         }
 
-//         .explanations .explanation-container {
+    //         .explanations .explanation-container {
 
-//             svg {
-//                 width: 72px;
-//                 height: 72px;
-//             }
+    //             svg {
+    //                 width: 72px;
+    //                 height: 72px;
+    //             }
 
-//             .text {
+    //             .text {
 
-//                 h2 {
-//                     color: $light-coral;
-//                     line-height: rem(28px);
-//                     font-size: em(18px);
-//                     font-weight: 700;
-//                 }
+    //                 h2 {
+    //                     color: $light-coral;
+    //                     line-height: rem(28px);
+    //                     font-size: em(18px);
+    //                     font-weight: 700;
+    //                 }
 
-//                 p {
-//                     font-size: em(15px);
-//                     line-height: em(25px);
-//                     color: $white;
-//                 }
-//             }
+    //                 p {
+    //                     font-size: em(15px);
+    //                     line-height: em(25px);
+    //                     color: $white;
+    //                 }
+    //             }
 
-//         }
-//     }
+    //         }
+    //     }
 
-//     .third-desc {
-//         background-color: $midnight-green;
-//         position: relative;
+    //     .third-desc {
+    //         background-color: $midnight-green;
+    //         position: relative;
 
-//         svg {
-//             position: absolute;
-//             left: 0;
-//             top: 0;
-//         }
+    //         svg {
+    //             position: absolute;
+    //             left: 0;
+    //             top: 0;
+    //         }
 
-//         .header-and-stories {
-//             h1 {
-//                 color: $white;
-//                 font-size: em(48px);
-//                 line-height: rem(48px);
-//                 text-align: center;
+    //         .header-and-stories {
+    //             h1 {
+    //                 color: $white;
+    //                 font-size: em(48px);
+    //                 line-height: rem(48px);
+    //                 text-align: center;
 
-//                 span {
-//                     color: $rapture-blue;
-//                 }
-//             }
-//         }
+    //                 span {
+    //                     color: $rapture-blue;
+    //                 }
+    //             }
+    //         }
 
-//         .stories {
-//             margin-block-start: rem(28px);
+    //         .stories {
+    //             margin-block-start: rem(28px);
 
-//             .success-story {
-//                 position: relative;
+    //             .success-story {
+    //                 position: relative;
 
-//                 svg {
-//                     left: em(142px);
-//                     z-index: 2;
-//                 }
+    //                 svg {
+    //                     left: em(142px);
+    //                     z-index: 2;
+    //                 }
 
-//                 p {
-//                     color: $white;
-//                     font-size: em(15px);
-//                     line-height: rem(25px);
-//                     text-align: center;
-//                     z-index: 5;
-//                     margin-block-end: rem(25px);
-//                 }
+    //                 p {
+    //                     color: $white;
+    //                     font-size: em(15px);
+    //                     line-height: rem(25px);
+    //                     text-align: center;
+    //                     z-index: 5;
+    //                     margin-block-end: rem(25px);
+    //                 }
 
-//                 h3 {
-//                     color: $rapture-blue;
-//                     font-size: em(18px);
-//                     line-height: rem(28px);
-//                     margin-block-end: rem(28px);
-//                 }
+    //                 h3 {
+    //                     color: $rapture-blue;
+    //                     font-size: em(18px);
+    //                     line-height: rem(28px);
+    //                     margin-block-end: rem(28px);
+    //                 }
 
-//                 img {
-//                     width: 62px;
-//                     height: 62px;
-//                     border-radius: 50%;
-//                     border: 2px solid $rapture-blue;
-//                 }
-//             }
-//         }
-//     }
-// }
+    //                 img {
+    //                     width: 62px;
+    //                     height: 62px;
+    //                     border-radius: 50%;
+    //                     border: 2px solid $rapture-blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
