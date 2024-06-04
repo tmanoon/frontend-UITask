@@ -1,62 +1,71 @@
 .footer {
     @media (min-width: 375px) {
-        padding-inline: rem(24px);
-        padding-block: rem(65px);
+        padding: rem(65px) rem(24px);
         background-color: $dark-green;
         color: $white;
         position: relative;
-        flex-direction: column;
         height: rem(432px);
+        justify-items: center;
 
-        p, pre {
+        &>* {
+            font-size: em(15px);
+            line-height: rem(25px);
+        }
+
+        .logo,
+        .links,
+        p {
+            margin-block-end: rem(24px);
+        }
+
+        p,
+        pre {
             text-align: center;
         }
 
-        .logo-links-address {
-            
+        .logo {
+            width: rem(96px);
+            height: rem(24px);
+        }
+
+        .links {
             gap: rem(24px);
-            flex-wrap: wrap;
+
+
+        }
+
+        p {
+            opacity: 60%;
+            font-size: em(15px);
+            line-height: rem(25px);
+            margin-block-end: rem(24px);
+        }
+
+        .icons {
             align-items: center;
-            flex-direction: column;
-
-            .logo-and-links {
-                gap: rem(24px);
-                align-items: center;
-
-                .logo {
-                    width: rem(96px);
-                    height: rem(24px);
-                }
-
-                .links {
-                    gap: em(28px);
-
-                    & > * {
-                        font-size: em(15px);
-                        line-height: rem(25px);
-                    }
-                }
-            }
-
-            p {
-                opacity: 60%;
-                font-size: em(15px);
-                line-height: rem(25px);
-            }
+            justify-content: center;
+            gap: rem(18px);
         }
 
-        .media-and-pre {
-            gap: rem(24px);
-
-            .icons {
-                align-self: center;
-                gap: rem(18px);
-            }
-
-            pre {
-                opacity: 60%;
-            }
+        pre {
+            margin-block-start: rem(24px);
+            opacity: 60%;
         }
+
+        // }
+    }
+
+    @media (min-width: 768px) {
+        padding: rem(48px) rem(39px);
+        background-color: $dark-green;
+        color: $white;
+        position: relative;
+        height: rem(271px);
+
+        p {
+            text-align: end;
+        }
+
     }
 
 }
