@@ -145,15 +145,19 @@
         grid-template-rows: rem(100px) 1fr;
         grid-template-columns: repeat(2, 1fr);
 
-        .logo, .links, .icons {
+        .logo,
+        .links,
+        .icons {
             justify-self: self-start;
         }
 
-        .icons, pre {
+        .icons,
+        pre {
             align-self: self-end;
         }
 
-        p, pre {
+        p,
+        pre {
             justify-self: self-end;
         }
 
