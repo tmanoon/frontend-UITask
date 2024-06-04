@@ -151,6 +151,57 @@ $turquoise: #C4FFFE;
             }
         }
     }
+
+    @media (min-width: 768px) {
+        & > * {
+            padding-inline: rem(97px);
+        }
+
+        .first-section {
+            padding-block: rem(80px);
+            height: rem(412px);
+
+            .text {
+                height: rem(220px);
+                gap: rem(45px);
+            }
+
+            h1,
+            .shape-and-txt p {
+                text-align: center;
+            }
+
+            h1 {
+                color: $white;
+                font-size: em(64px);
+                line-height: rem(56px);
+                grid-row: 1;
+            }
+
+            .shape-and-txt {
+                grid-row: 2;
+
+                svg {
+                    display: none;
+                }
+
+                p {
+                    color: $white;
+                    font-size: 15px;
+                    line-height: rem(28px);
+                    font-family: livvic-med;
+                    font-weight: 600;
+                    padding-inline: rem(65px);
+                }
+            }
+
+            .right-shape {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
 }
 
 
