@@ -129,5 +129,8 @@
 }
 
 .contact {
-    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 375px) {
+        grid-template-rows: repeat(2, 1fr);
+    }
+    // grid-template-columns: repeat(2, 1fr);
 }
