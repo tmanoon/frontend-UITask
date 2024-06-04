@@ -21,6 +21,7 @@
 
             .text {
                 position: relative;
+                height: rem(210px);
 
                 h1,
                 span {
@@ -78,6 +79,7 @@
 
                 .text {
                     align-items: center;
+                    height: rem(220px);
 
                     h2 {
                         color: $light-coral;
@@ -172,6 +174,39 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        &>* {
+            padding-inline: rem(45px);
+        }
+
+        .first-desc {
+            padding-block: rem(64px) rem(177px);
+            position: relative;
+            height: rem(524px);
+
+            .text {
+                gap: rem(26px);
+                height: rem(220px);
+                width: rem(683px);
+
+                h1,
+                span {
+                    font-size: rem(64px);
+                    line-height: rem(56px);
+                }
+
+                p {
+                    height: rem(84px);
+                    padding-inline: rem(105px);
+                }
+            }
+
+            .bottom-shape {
+                left: rem(205px);
             }
         }
     }
