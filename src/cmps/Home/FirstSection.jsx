@@ -12,11 +12,12 @@ export function FirstSection() {
                     <svg className="top-shape" width="50" height="4" viewBox="0 0 50 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="50" height="4" fill="#79C8C7" />
                     </svg>
-                    <h1>Find the best <span className="talent-word">talent</span></h1>
+                    <h1>Find the <br/> best <span className="talent-word">talent</span></h1>
                     <p>
                         Finding the right people and building high
                         performing teams can be hard. Most companies
                         aren’t tapping into the abundance of global talent.
+                        We’re about to change that.
                     </p>
                 </div>
                 <div className="bottom-shape">
