@@ -1,102 +1,220 @@
 .contact {
-    position: relative;
-    background-color: $midnight-green;
-    padding: rem(25px) 8.727vw 8.727vw;
+    @media (min-width: 375px) {
+        position: relative;
+        background-color: $midnight-green;
+        padding: rem(80px) rem(24px);
 
-    svg.left-shape,
-    svg.right-shape {
-        position: absolute;
-    }
-
-    .left-shape {
-        left: 0;
-        top: 0;
-    }
-
-    .right-shape {
-        right: 0;
-        bottom: 0;
-    }
-
-    .header-and-explanations {
-
-        h1 {
-            font-size: em(64px);
-            line-height: rem(100px);
-            color: $white;
-            margin-block-end: rem(32px);
+        svg.left-shape,
+        svg.right-shape {
+            position: absolute;
         }
 
-        h3 {
-            color: $light-coral;
-            font-size: em(32px);
-            line-height: rem(48px);
-            margin-block-end: rem(16px);
+        .left-shape {
+            display: none;
+            left: 0;
+            top: 0;
         }
 
-        .explanations {
-            .explanation-container {
+        .right-shape {
+            right: -4.03125rem;
+            bottom: rem(-100px);
+            width: rem(225px);
+            height: rem(200px);
 
-                margin-block-end: .5rem;
-                gap: rem(18px);
+        }
 
-                svg {
-                    width: rem(72px);
-                    height: rem(72px);
-                }
+        .header-and-explanations {
 
-                .text {
+            h1, h3 {
+                text-align: center;
+            }
 
-                    h2 {
-                        color: $white;
-                        font-size: em(18px);
-                        line-height: rem(28px);
+            h1 {
+                font-size: em(40px);
+                line-height: rem(40px);
+                color: $white;
+                margin-block-end: 1rem;
+            }
+
+            h3 {
+                color: $light-coral;
+                font-size: em(32px);
+                line-height: rem(48px);
+                margin-block-end: rem(16px);
+            }
+
+            .explanations {
+                .explanation-container {
+
+                    margin-block-end: .5rem;
+                    gap: rem(18px);
+
+                    svg {
+                        width: rem(72px);
+                        height: rem(72px);
+                    }
+
+                    .text {
+
+                        h2 {
+                            color: $white;
+                            font-size: em(18px);
+                            line-height: rem(28px);
+                        }
                     }
                 }
             }
         }
-    }
 
-    .fields {
+        .fields {
 
-        form {
-            height: 100%;
+            form {
+                height: 100%;
 
-            textarea {
-                
-                padding: 8px;
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid $white;
-                margin-block-end: 8px;
-                resize: none;
-                outline: none;
+                textarea {
 
-                &:hover {
-                    border-bottom: 1px solid $light-coral;
+                    padding: 8px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid $white;
+                    margin-block-end: 8px;
+                    resize: none;
+                    outline: none;
+
+                    &:hover {
+                        border-bottom: 1px solid $light-coral;
+                    }
+
+                    &::placeholder {
+                        color: $white;
+                        opacity: 0.6;
+                    }
+
+                    &:hover::placeholder {
+                        color: $light-coral;
+                    }
+
+                    &:focus::placeholder {
+                        opacity: 1;
+                    }
                 }
 
-                &::placeholder {
-                    color: $white;
-                    opacity: 0.6;
+                button {
+                    width: rem(123px);
+                    height: rem(48px);
+                    font-size: em(18px);
+                    line-height: rem(28px);
+                    margin-block-start: 1em;
                 }
-
-                &:hover::placeholder {
-                    color: $light-coral;
-                }
-            
-                &:focus::placeholder {
-                    opacity: 1;
-                }
-            }
-
-            button {
-                width: rem(123px);
-                height: rem(48px);
-                font-size: em(18px);
-                line-height: rem(28px);
-                margin-block-start: 1em;
             }
         }
     }
 }
+
+
+
+
+
+
+// .contact {
+//     position: relative;
+//     background-color: $midnight-green;
+//     padding: rem(25px) 8.727vw 8.727vw;
+
+//     svg.left-shape,
+//     svg.right-shape {
+//         position: absolute;
+//     }
+
+//     .left-shape {
+//         left: 0;
+//         top: 0;
+//     }
+
+//     .right-shape {
+//         right: 0;
+//         bottom: 0;
+//     }
+
+//     .header-and-explanations {
+
+//         h1 {
+//             font-size: em(64px);
+//             line-height: rem(100px);
+//             color: $white;
+//             margin-block-end: rem(32px);
+//         }
+
+//         h3 {
+//             color: $light-coral;
+//             font-size: em(32px);
+//             line-height: rem(48px);
+//             margin-block-end: rem(16px);
+//         }
+
+//         .explanations {
+//             .explanation-container {
+
+//                 margin-block-end: .5rem;
+//                 gap: rem(18px);
+
+//                 svg {
+//                     width: rem(72px);
+//                     height: rem(72px);
+//                 }
+
+//                 .text {
+
+//                     h2 {
+//                         color: $white;
+//                         font-size: em(18px);
+//                         line-height: rem(28px);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .fields {
+
+//         form {
+//             height: 100%;
+
+//             textarea {
+
+//                 padding: 8px;
+//                 background-color: transparent;
+//                 border: none;
+//                 border-bottom: 1px solid $white;
+//                 margin-block-end: 8px;
+//                 resize: none;
+//                 outline: none;
+
+//                 &:hover {
+//                     border-bottom: 1px solid $light-coral;
+//                 }
+
+//                 &::placeholder {
+//                     color: $white;
+//                     opacity: 0.6;
+//                 }
+
+//                 &:hover::placeholder {
+//                     color: $light-coral;
+//                 }
+
+//                 &:focus::placeholder {
+//                     opacity: 1;
+//                 }
+//             }
+
+//             button {
+//                 width: rem(123px);
+//                 height: rem(48px);
+//                 font-size: em(18px);
+//                 line-height: rem(28px);
+//                 margin-block-start: 1em;
+//             }
+//         }
+//     }
+// }
