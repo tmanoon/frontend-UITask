@@ -2,8 +2,7 @@
     @media (min-width: 375px) {
         background-color: $midnight-green;
         color: $white;
-        padding-inline: rem(24px);
-        padding-block: rem(48px);
+        padding: rem(48px) rem(24px);
 
         .layout-for-menu {
             background-color: #00000080;
@@ -72,6 +71,25 @@
                 bottom: 0;
                 right: 0;
             }
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: rem(64px) rem(39px);
+
+        .right-links {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .buttons {
+            .contact-btn {
+                display: block;
+            }
+
         }
     }
 
