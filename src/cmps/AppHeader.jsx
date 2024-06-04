@@ -40,7 +40,7 @@ export function AppHeader() {
                 <div className="hamburger-menu-links grid">
                     <span onClick={(ev) => onMenuClick(ev)} className="flex">
                         <svg className="x-btn" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99989 6.37869L2.98948 0.368286L0.868164 2.48961L6.87857 8.50001L0.868164 14.5104L2.98948 16.6317L8.99989 10.6213L15.0103 16.6317L17.1316 14.5104L11.1212 8.50001L17.1316 2.48961L15.0103 0.368286L8.99989 6.37869Z" fill="white" />
+                            <path fillRule="evenodd" clipRule="evenodd" d="M8.99989 6.37869L2.98948 0.368286L0.868164 2.48961L6.87857 8.50001L0.868164 14.5104L2.98948 16.6317L8.99989 10.6213L15.0103 16.6317L17.1316 14.5104L11.1212 8.50001L17.1316 2.48961L15.0103 0.368286L8.99989 6.37869Z" fill="white" />
                         </svg>
                     </span>
                     <NavLink to='/'><span onClick={(ev) => onMenuClick(ev)}>Home</span></NavLink>
@@ -50,8 +50,8 @@ export function AppHeader() {
                     </NavLink>
                     <svg className="bottom-shape" width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="100" y="100" width="100" height="100" transform="rotate(180 100 100)" fill="#2C6269" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM100 133C118.225 133 133 118.225 133 100C133 81.7746 118.225 67 100 67C81.7746 67 67 81.7746 67 100C67 118.225 81.7746 133 100 133Z" fill="#F67E7E" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M100 0H0V4H100V0ZM100 8H0V12H100V8ZM0 16H100V20H0V16ZM100 24H0V28H100V24ZM0 32H100V36H0V32ZM100 40H0V44H100V40Z" fill="#79C8C7" />
+                        <path fillRule="evenodd" clipRule="evenodd" d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM100 133C118.225 133 133 118.225 133 100C133 81.7746 118.225 67 100 67C81.7746 67 67 81.7746 67 100C67 118.225 81.7746 133 100 133Z" fill="#F67E7E" />
+                        <path fillRule="evenodd" clipRule="evenodd" d="M100 0H0V4H100V0ZM100 8H0V12H100V8ZM0 16H100V20H0V16ZM100 24H0V28H100V24ZM0 32H100V36H0V32ZM100 40H0V44H100V40Z" fill="#79C8C7" />
                     </svg>
                 </div>}
         </section>
