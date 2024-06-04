@@ -3,6 +3,7 @@
         background-color: $midnight-green;
         color: $white;
         padding: rem(48px) rem(24px);
+        height: rem(128px);
 
         .layout-for-menu {
             background-color: #00000080;
@@ -76,6 +77,7 @@
 
     @media (min-width: 768px) {
         padding: rem(64px) rem(39px);
+        height: rem(176px);
 
         .right-links {
             display: flex;
