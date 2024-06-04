@@ -109,6 +109,28 @@
             }
         }
     }
+
+    @media (min-width: 768px) {
+        padding-inline: rem(113px);
+
+        .left-shape {
+            display: block;
+        }
+
+        .right-shape {
+            bottom: 0;
+        }
+
+        .header-and-explanations {
+
+            h1 {
+                font-size: em(64px);
+                line-height: rem(56px);
+                color: $white;
+                margin-block-end: 1rem;
+            }
+        }
+    }
 }
 
 
