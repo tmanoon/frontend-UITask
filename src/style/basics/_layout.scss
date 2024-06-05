@@ -201,4 +201,42 @@
             grid-row: 2;
         }
     }
+
+    @media (min-width: 1200px) {
+        grid-template-rows: rem(100px);
+        grid-template-columns: rem(730px) rem(380px);
+
+        .logo {
+            grid-column: 1;
+            align-self: self-start;
+            grid-row: 1;
+        }
+
+        .links {
+            grid-column: 1;
+            align-self: self-end;
+            grid-row: 1;
+        }
+
+        pre {
+            grid-column: 2;
+            align-self: self-end;
+            grid-row: 1;
+        }
+
+        .icons {
+            grid-column: 2;
+            align-self: self-start;
+            grid-row: 1;
+            justify-self: self-end;
+        }
+
+        p {
+            grid-column: 1;
+            align-self: self-start;
+            justify-self: self-start;
+            grid-row: 1;
+        }
+
+    }
 }
