@@ -5,25 +5,50 @@
         position: relative;
         align-items: center;
         padding-block: rem(83px);
+
+        .bottom-shape {
+            align-self: start;
+            position: absolute;
+            bottom: rem(-21px);
+        }
+
+        .title-and-btn {
+            padding-inline: 5.475vw;
+            gap: 1rem;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                color: $sacramento-state-green;
+                line-height: rem(32px);
+                font-size: em(32px);
+                text-align: center;
+            }
+        }
     }
 
-    .bottom-shape {
-        align-self: start;
-        position: absolute;
-        bottom: rem(-21px);
-    }
+    @media (min-width: 768px) {
+        height: rem(200px);
+        padding-block: rem(76px);
 
-    .title-and-btn {
-        padding-inline: 5.475vw;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
+        .bottom-shape {
+            align-self: start;
+            position: absolute;
+            bottom: rem(-21px);
+        }
 
-        h1 {
-            color: $sacramento-state-green;
-            line-height: rem(32px);
-            font-size: em(32px);
-            text-align: center;
+        .title-and-btn {
+            padding-inline: 0;
+            gap: 1rem;
+            flex-direction: row;
+            align-items: center;
+
+            h1 {
+                color: $sacramento-state-green;
+                line-height: rem(32px);
+                font-size: em(32px);
+                text-align: center;
+            }
         }
     }
 }
