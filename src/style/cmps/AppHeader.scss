@@ -95,13 +95,8 @@
         }
     }
 
-
-    // padding-block: rem(73px);
-
-
-    // .right-links>* {
-    //     font-size: em(18px);
-    //     font-weight: 600;
-    //     line-height: em(28px);
-    // }
+    @media (min-width: 1200px) {
+        padding: rem(73px) rem(165px);
+        height: rem(194px);
+    }
 }
