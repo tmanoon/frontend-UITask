@@ -213,9 +213,6 @@
         }
 
         .second-desc {
-            background-color: $sacramento-state-green;
-            padding-block: 6em;
-            position: relative;
 
             .shape-and-txt,
             .explanations {
@@ -327,6 +324,32 @@
                 position: absolute;
                 bottom: rem(-4px);
                 left: 63.680%;
+            }
+        }
+
+        .second-desc {
+            padding-block: rem(165px);
+            .bottom-shape {
+                top: calc(100% - 244px);
+            }
+
+            .explanations {
+                margin-block-start: 2rem;
+            }
+
+            .shape-and-txt {
+                width: 100%;
+
+                h1 {
+                    font-size: em(48px);
+                    line-height: rem(48px);
+                    height: rem(144px);
+                }
+
+                svg {
+                    position: absolute;
+                    top: -48px;
+                }
             }
         }
     }
