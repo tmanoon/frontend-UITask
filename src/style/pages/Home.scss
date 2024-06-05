@@ -275,50 +275,70 @@
 
         .third-desc {
             padding-block: rem(100px);
+            height: rem(1199px);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        & > * {
+            padding-inline: rem(165px);
+        }
+
+        .first-desc {
+
+            padding-inline: rem(165px);
+
+            .left-shape,
+            .top-shape {
+                display: block;
+            }
+
+            .left-shape {
+                position: absolute;
+                left: 0;
+                top: rem(6px);
+            }
+
+            .top-shape {
+                grid-column: 2;
+            }
+
+            .text {
+                position: relative;
+                height: rem(200px);
+                width: rem(1110px);
+
+                h1,
+                span {
+                    font-size: 100px;
+                    line-height: 100px;
+                    text-align: start;
+                }
+
+                p {
+                    text-align: start;
+                    padding-inline: 0;
+                    font-size: em(18px);
+                    height: fit-content;
+                }
+            }
+
+            .bottom-shape {
+                position: absolute;
+                bottom: rem(-4px);
+                left: 63.680%;
+            }
         }
     }
 }
 
 
 
-// .first-desc {
-//     background-color: $midnight-green;
-//     color: $white;
-//     padding-block: rem(6px) rem(177px);
-//     position: relative;
 
-//     .left-shape {
-//         position: absolute;
-//         left: 0;
-//         top: rem(6px);
-//     }
 
-//     .top-shape {
-//         position: absolute;
-//         grid-column: 2;
-//         left: rem(120px);
-//     }
 
-//     .text {
-//         position: relative;
 
-//         h1,
-//         span {
-//             font-size: 100px;
-//             line-height: 100px;
-//         }
 
-//         span {
-//             color: $light-coral;
-//         }
-//     }
-
-//     .bottom-shape {
-//         position: absolute;
-//         bottom: rem(-4px);
-//         right: 8.727vw;
-//     }
-// }
 
 //     .second-desc {
 //         background-color: $sacramento-state-green;
