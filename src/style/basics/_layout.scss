@@ -93,8 +93,6 @@
     }
 }
 
-
-
 .third-desc {
     @media (min-width: 375px) {
         .stories {
@@ -107,20 +105,14 @@
             }
         }
     }
+
+    @media (min-width: 1200px) {
+        .stories {
+            grid-auto-flow: column;
+            gap: rem(28px);
+        }
+    }
 }
-
-
-
-// .third-desc {
-//     .stories {
-//         grid-auto-flow: column;
-
-//         .success-story {
-//             grid-auto-flow: row;
-//             justify-items: center;
-//         }
-//     }
-// }
 
 .about {
     .first-section {
