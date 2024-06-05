@@ -89,7 +89,7 @@ $turquoise: #C4FFFE;
                         height: rem(96px);
                         border-radius: 50%;
                         border: 2px solid $turquoise;
-                        margin-block: rem(18px);
+                        margin-block: rem(32px);
                     }
 
                     h3 {
@@ -107,6 +107,7 @@ $turquoise: #C4FFFE;
                         &.clicked-director {
                             padding-inline: rem(32px);
                             margin-block-end: rem(18px);
+                            text-align: center;
                         }
                     }
 
@@ -127,6 +128,12 @@ $turquoise: #C4FFFE;
                         }
                     }
                 }
+            }
+
+            .bottom-shape {
+                position: absolute;
+                right: 0;
+                bottom: 0;
             }
         }
 
@@ -153,7 +160,7 @@ $turquoise: #C4FFFE;
     }
 
     @media (min-width: 768px) {
-        & > * {
+        &>* {
             padding-inline: rem(97px);
         }
 
@@ -199,6 +206,55 @@ $turquoise: #C4FFFE;
                 position: absolute;
                 right: 0;
                 bottom: 0;
+            }
+        }
+
+        .second-section {
+
+            padding-block: rem(100px);
+
+            .right-shape {
+                left: 0;
+                top: 0;
+            }
+
+            .directors {
+
+                h1 {
+                    font-size: em(32px);
+                    line-height: rem(32px);
+                }
+
+                .director {
+                    width: rem(281px);
+                    height: rem(281px);
+                    margin-block-end: rem(60px);
+
+                    p {
+
+                        &.clicked-director {
+                            padding-inline: rem(23px);
+                            margin-block-end: rem(34px);
+                        }
+                    }
+
+                    span {
+                        color: $sacramento-state-green;
+                        background-color: $light-coral;
+                        border: none;
+                        border-radius: 50%;
+                        width: rem(56px);
+                        height: rem(56px);
+                        position: absolute;
+                        bottom: rem(-28px);
+                        font-size: 1.7em;
+                        cursor: pointer;
+
+                        &.clicked-director {
+                            background-color: $rapture-blue;
+                        }
+                    }
+                }
             }
         }
     }
