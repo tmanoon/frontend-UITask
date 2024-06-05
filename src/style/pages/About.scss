@@ -257,6 +257,21 @@ $turquoise: #C4FFFE;
                 }
             }
         }
+
+        .third-section {
+            height: rem(308px);
+            padding-inline: rem(39px);
+            padding-block: rem(100px);
+
+            .left-shape {
+                top: -100px;
+                left: 0;
+            }
+
+            h1 {
+                margin-block-end: (50px);
+            }
+        }
     }
 }
 
