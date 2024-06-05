@@ -51,58 +51,28 @@
             margin-block-start: rem(24px);
             opacity: 60%;
         }
-
-        // }
     }
 
     @media (min-width: 768px) {
         padding: rem(48px) rem(39px);
-        background-color: $dark-green;
-        color: $white;
-        position: relative;
         height: rem(271px);
 
         p {
             text-align: end;
         }
-
     }
 
+    @media (min-width: 1200px) {
+        padding: rem(24px) rem(165px);
+        height: rem(148px);
+
+        p {
+            text-align: start;
+            margin-inline-start: rem(165px);
+        }
+
+        .links {
+            margin: 0;
+        }
+    }
 }
-
-// .footer {
-//     padding-inline: 8.727vw;
-//     padding-block: rem(28px);
-//     background-color: $dark-green;
-//     color: $white;
-
-//     .logo-links-address {
-//         gap: rem(82px);
-//         flex-wrap: wrap;
-//         height: 100px;
-
-//         .logo-and-links {
-
-//             .links {
-//                 gap: em(28px);
-//             }
-//         }
-
-//         p {
-//             opacity: 60%;
-//             font-size: em(15px);
-//             line-height: rem(25px);
-//         }
-//     }
-
-//     .media-and-pre {
-//         .icons {
-//             align-self: flex-end;
-//             gap: rem(18px);
-//         }
-
-//         pre {
-//             opacity: 60%;
-//         }
-//     }
-// }
