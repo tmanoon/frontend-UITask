@@ -72,7 +72,6 @@
                 height: 100%;
 
                 textarea {
-
                     padding: 8px;
                     background-color: transparent;
                     border: none;
@@ -122,6 +121,7 @@
         }
 
         .header-and-explanations {
+            margin-block-end: rem(56px);
 
             h1 {
                 font-size: em(64px);
