@@ -20,8 +20,7 @@ export function FirstSection() {
                         We’re about to change that.
                     </p>
                 </div>
-                <div className="bottom-shape">
-                    <svg width="358" height="100" viewBox="0 0 358 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="bottom-shape" width="358" height="100" viewBox="0 0 358 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group 7">
                             <g id="Group 4">
                                 <circle id="Oval" cx="100" cy="100" r="100" fill="#2C6269" />
@@ -32,7 +31,6 @@ export function FirstSection() {
                             <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M100 0H0V4H100V0ZM100 8H0V12H100V8ZM0 16H100V20H0V16ZM100 24H0V28H100V24ZM0 32H100V36H0V32ZM100 40H0V44H100V40Z" fill="#79C8C7" />
                         </g>
                     </svg>
-                </div>
             </article>
     )
 }
