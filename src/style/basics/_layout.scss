@@ -116,8 +116,8 @@
 
 .about {
     .first-section {
-            .text {
-                @media (min-width: 375px) {
+        .text {
+            @media (min-width: 375px) {
                 grid-template-rows: repeat(2, max-content)
             }
 
@@ -142,9 +142,11 @@
                 gap: .5rem;
             }
 
-            // grid-template-columns: repeat(3, 1fr);
-            // grid-template-rows: repeat(2, 1fr);
-            // gap: rem(28px);
+            @media (min-width: 1200px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: rem(28px);
+            }
         }
     }
 }
