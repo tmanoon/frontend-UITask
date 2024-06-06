@@ -102,6 +102,9 @@ $turquoise: #C4FFFE;
                     p {
                         display: none;
                         color: $white;
+                        font-size: em(15px);
+                        line-height: rem(25px);
+                        font-weight: 600;
 
                         &.clicked-director {
                             padding-inline: rem(32px);
@@ -312,111 +315,26 @@ $turquoise: #C4FFFE;
                 }
             }
         }
+
+        .second-section {
+
+            padding-block: rem(165px);
+
+            .directors {
+
+                h1 {
+                    font-size: em(48px);
+                    line-height: rem(48px);
+                }
+
+                .director {
+                    width: rem(350px);
+                    height: rem(253px);
+                }
+            }
+        }
     }
 }
-
-
-//     &>* {
-//         padding: 8.727vw;
-//     }
-
-//     .first-section {
-//         background-color: $midnight-green;
-//         padding-block: rem(120px);
-//         position: relative;
-
-//         h1 {
-//             color: $white;
-//             font-size: em(64px);
-//             line-height: rem(100px);
-//         }
-
-//         .shape-and-txt { 
-//             grid-column: 2 / 4;
-
-//             p {
-//                 color: $white;
-//             }
-//         }
-
-//         .right-shape {
-//             position: absolute;
-//             right: 0;
-//             bottom: 0;
-//         }
-//     }
-
-//     .second-section {
-//         position: relative;
-//         background-color: $deep-jungle-green;
-//         .right-shape {
-//             position: absolute;
-//             left: 0;
-//             top: 0;
-//         }
-
-//         .directors {
-
-//                 h1 {
-//                     font-size: em(48px);
-//                     line-height: rem(48px);
-//                     text-align: center;
-//                     color: $white;
-//                     margin-block-end: rem(48px);
-//                 }
-
-//                 .director {
-//                     position: relative;
-//                     background-color: $sacramento-state-green;
-//                     width: rem(350px);
-//                     height: rem(233px);
-//                     margin-block-end: rem(28px);
-
-//                     img {
-//                         width: rem(96px);
-//                         height: rem(96px);
-//                         border-radius: 50%;
-//                         border: 2px solid $turquoise;
-//                         margin-block: rem(18px);
-//                     }
-
-//                     h3 {
-//                         color: $rapture-blue;
-
-//                         &.clicked-director {
-//                             margin-block: rem(32px) rem(18px);
-//                         }
-//                     }
-
-//                     p {
-//                         display: none;
-//                         color: $white;
-
-//                         &.clicked-director {
-//                             padding-inline: rem(32px);
-//                             margin-block-end: rem(18px);
-//                         }
-//                     }
-
-//                     span {
-//                         color: $sacramento-state-green;
-//                         background-color: $light-coral;
-//                         border: none;
-//                         border-radius: 50%;
-//                         width: rem(56px);
-//                         height: rem(56px);
-//                         position: absolute;
-//                         bottom: rem(-28px);
-//                         font-size: 1.7em;
-//                         cursor: pointer;
-
-//                         &.clicked-director {
-//                             background-color: $rapture-blue;
-//                         }
-//                     }
-//                 }
-//         }
-//     }
 
 //     .third-section {
 //         position: relative;
