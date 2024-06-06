@@ -9,9 +9,7 @@ Clean Styling: Leverages best practices for maintainable and scalable styles wit
 Sass Integration: Employs Sass for efficient CSS pre-processing, including variables, mixins, nesting, and more.
 Installation:
 
-Clone this repository: git clone https://github.com/<your-username>/<your-repo-name>.git
-Navigate to the project directory: cd <your-repo-name>
-Install dependencies: npm install (or yarn install)
+Clone this repository: git clone https://github.com/<your-username>/<your-repo-name>.git => Navigate to the project directory: cd <your-repo-name> => Install dependencies: npm install (or yarn install)
 
 Development:
 
