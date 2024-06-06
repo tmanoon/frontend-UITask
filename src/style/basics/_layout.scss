@@ -116,9 +116,14 @@
 
 .about {
     .first-section {
-        @media (min-width: 375px) {
             .text {
+                @media (min-width: 375px) {
                 grid-template-rows: repeat(2, max-content)
+            }
+
+            @media (min-width: 1200px) {
+                grid-template-rows: minmax(156px, 1fr);
+                grid-template-columns: 33% 1fr;
             }
         }
     }
