@@ -3,6 +3,7 @@
         position: relative;
         background-color: $midnight-green;
         padding: rem(80px) rem(24px);
+        overflow: hidden;
 
         svg.left-shape,
         svg.right-shape {
@@ -126,8 +127,26 @@
             h1 {
                 font-size: em(64px);
                 line-height: rem(56px);
-                color: $white;
-                margin-block-end: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-inline: rem(165px);
+
+        .header-and-explanations {
+            margin-block-end: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            h1,
+            h3 {
+                text-align: start;
+            }
+
+            h1 {
+                line-height: rem(100px);
             }
         }
     }
