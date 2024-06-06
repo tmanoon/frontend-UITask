@@ -193,7 +193,7 @@ $turquoise: #C4FFFE;
 
                 p {
                     color: $white;
-                    font-size: 15px;
+                    font-size: em(15px);
                     line-height: rem(28px);
                     font-family: livvic-med;
                     font-weight: 600;
@@ -269,6 +269,53 @@ $turquoise: #C4FFFE;
 
             h1 {
                 margin-block-end: (50px);
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        & > * {
+            padding-inline: rem(165px);
+        }
+
+        .first-section {
+            height: max-content;
+
+            .text {
+                height: max-content;
+                gap: rem(45px);
+            }
+
+            h1,
+            .shape-and-txt p {
+                text-align: start;
+            }
+
+            h1 {
+                line-height: rem(100px);
+                grid-column: 1;
+            }
+
+            .shape-and-txt {
+                grid-column: 2;
+                grid-row: 1;
+
+                svg {
+                    display: block;
+                }
+
+                p {
+                    font-size: em(18px);
+                    line-height: rem(28px);
+                    padding-inline: 0;
+                }
+            }
+
+            .right-shape {
+                position: absolute;
+                right: 0;
+                bottom: 0;
             }
         }
     }
