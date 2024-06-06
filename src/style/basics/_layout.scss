@@ -156,7 +156,10 @@
         grid-template-rows: repeat(2, 1fr);
     }
 
-    // grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 1200px) {
+        grid-template-rows: minmax(428px, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .footer {
